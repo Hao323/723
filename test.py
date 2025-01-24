@@ -23,3 +23,20 @@ def c_gcd(a , b): #Define a function Calculate the greatest common divisor of tw
          
     print(f"The GCD of the given numbers is: {a}") #return
     return a
+
+def calculate_gcd_with_extension(a, b):
+
+     # Calculate the GCD
+   gcd = c_gcd(a, b)
+
+    # If GCD calculation failed due to invalid input, return the error message
+   if isinstance(gcd, str):
+        return gcd
+
+    # Check if the numbers are relatively prime
+   if gcd == 1:
+        print("The numbers are relatively prime.")
+   else:
+        print("The numbers are not relatively prime.")
+
+   return gcd
