@@ -12,20 +12,7 @@ import math  #Provides mathematical calculation functions
 
 
 
-def update_display(value): #Add the number or operator entered by the button to the input box.
-    global expression
-    expression += str(value) #The key value is appended to the expression variable
-    entry_var.set(expression)
 
-def calculate():
-    global expression
-    try:
-        result = eval(expression)  
-        entry_var.set(result) 
-        expression = str(result)  # Update the expression
-    except Exception as e:
-        entry_var.set("Error")  # An error is encountered and "Error" is displayed
-        expression = ""
         
         
 
