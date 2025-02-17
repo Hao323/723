@@ -6,18 +6,11 @@ Created on Wed Feb 12 11:50:20 2025
 @author: haojiacheng
 """
 
-import tinkter as tk
-from tkinter import messagebox
+
 import math  #Provides mathematical calculation functions
 
 
-root = tk.Tk()
-root.title("") 
-root.geometry("") #Create a Tkinter window.
 
-entry_var = tk.StringVar()
-entry = tk.Entry(root, textvariable=entry_var, font=("Arial", 20), justify="right") #Bind entry_var to update the contents of the input box.
-entry.grid(row=0, column=0, columnspan=4, ipadx=8, ipady=8, pady=10) # Set address
 
 def update_display(value): #Add the number or operator entered by the button to the input box.
     global expression
@@ -33,6 +26,9 @@ def calculate():
     except Exception as e:
         entry_var.set("Error")  # An error is encountered and "Error" is displayed
         expression = ""
+        
+        
+
 
 def calculate(x):
     global expression
