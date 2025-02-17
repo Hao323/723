@@ -50,18 +50,7 @@ def calculate(x):
         expression = ""
         
         
-def clear(): #Clear the input
-    global expression
-    expression = "" #Clear the expression and update the input box.
-    entry_var.set("")
-    
-button = []
 
-trigonometric_f = ['sin', 'cos', 'tan', 'asin', 'acos', 'atan']
-for i, x in enumerate(trigonometric_f): 
-    tk.button(root , text = ) #The bind button calls calculate(x) to calculate trigonometric functions
-    
-root.mainloop()
     
 
 
